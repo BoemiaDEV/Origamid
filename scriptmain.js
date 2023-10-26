@@ -13,5 +13,3 @@ tabMenu.forEach((itemMenu, index) => {
         activeTab(index);
     });
 });
-
-console.log(tabContent);
