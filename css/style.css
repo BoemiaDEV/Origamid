@@ -218,13 +218,13 @@ body {
 
 .js-tabContent section.ativo{
   display: block !important;
-  animation: show .5s forwards;
+  animation: show 1s forwards;
 }
 
 @keyframes show {
   from{
     opacity: 0;
-    transform: translate3d(-30,0,0);
+    transform: translate3d(-45px ,0,0);
   }
   to{
     opacity: 3;
