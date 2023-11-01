@@ -1,7 +1,7 @@
 const tabMenu = document.querySelectorAll('.js-tabMenu li');
 const tabContent = document.querySelectorAll('.js-tabContent section');
 
-if(tabMenu.length) {
+if(tabMenu.length && tabContent.length) {
     tabContent[0].classList.add('ativo');
 
     function activeTab(index){
@@ -18,4 +18,6 @@ if(tabMenu.length) {
     });
 
 }
+
+console.log()
 
