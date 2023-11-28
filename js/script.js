@@ -5,6 +5,7 @@ import initTabNav from './modules/tabnav.js';
 import initmodal from './modules/modal.js'
 import initTooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
+import initMenuMobile from './modules/menu-mobile.js';
 
 initScrollSuave();
 initAnimacaoScroll();
@@ -13,14 +14,14 @@ initTabNav();
 initmodal();
 initTooltip();
 initDropdownMenu();
-
-const iniciar = document.querySelector('.iniciar');
-const pausar = document.querySelector('.pausar');
-const tempo = document.querySelector('.tempo');
-const guardatempo = document.querySelector('.guardatempo')
-iniciar.addEventListener('click', iniciarTempo);
-pausar.addEventListener('click', pausarTempo);
-tempo.addEventListener('click', resetarTempo);
+initMenuMobile();
+// const iniciar = document.querySelector('.iniciar');
+// const pausar = document.querySelector('.pausar');
+// const tempo = document.querySelector('.tempo');
+// const guardatempo = document.querySelector('.guardatempo')
+// iniciar.addEventListener('click', iniciarTempo);
+// pausar.addEventListener('click', pausarTempo);
+// tempo.addEventListener('click', resetarTempo);
 
 
 // let i = 0;

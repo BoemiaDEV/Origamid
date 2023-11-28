@@ -8,13 +8,13 @@
 [data-dropdown]:hover .dropdown-menu,
 [data-dropdown].ativo .dropdown-menu{
     display: block;
-    animation: showUp .4s forwards;
-}
+    animation: showUp .9s forwards;
+} 
 
 @keyframes showUp {
     from{
         opacity: 0;
-        transform: translate3d(0,300px,0);
+        transform: translate3d(0,30px,0);
     }
     to{
         opacity: 1;

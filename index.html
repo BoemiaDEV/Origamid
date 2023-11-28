@@ -14,8 +14,11 @@
 <body>
   <div class="grid-container">
     <nav class="menu" data-menu="suave">
-      <ul>
-        <li><a href="animais.html">Animais</a></li>
+
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+
+      <ul data-menu="list" id="menu">
+        <li><a href="#animais">Animais</a></li>
         <li data-dropdown>
           <a href="sobre.html">Sobre</a>
           <ul class="dropdown-menu">
@@ -134,6 +137,8 @@
         </section>
       </div>
     </section>
+    
+
 
     <section class="grid-section faq" data-anime="scroll" id="faq">
       <h1 class="titulo">FAQ</h1>
