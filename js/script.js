@@ -6,6 +6,8 @@ import initmodal from './modules/modal.js'
 import initTooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
+import initNumeros from './modules/numeros.js'
+
 
 initScrollSuave();
 initAnimacaoScroll();
@@ -15,6 +17,7 @@ initmodal();
 initTooltip();
 initDropdownMenu();
 initMenuMobile();
+initNumeros();
 // const iniciar = document.querySelector('.iniciar');
 // const pausar = document.querySelector('.pausar');
 // const tempo = document.querySelector('.tempo');
