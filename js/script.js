@@ -20,6 +20,8 @@ initDropdownMenu();
 initMenuMobile();
 initNumeros();
 initFuncionamento();
+
+
 // const iniciar = document.querySelector('.iniciar');
 // const pausar = document.querySelector('.pausar');
 // const tempo = document.querySelector('.tempo');
@@ -50,4 +52,5 @@ initFuncionamento();
 // }
 
 
-// console.log('a')
+
+
