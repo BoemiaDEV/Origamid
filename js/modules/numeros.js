@@ -5,6 +5,8 @@ export default function initNumeros() {
 
     const numeros = document.querySelectorAll('[data-numero]');
 
+    console.log(numeros)
+
     numeros.forEach((numero) => {
       const total = +numero.innerText;
       const incremento = Math.floor(total / 50);
