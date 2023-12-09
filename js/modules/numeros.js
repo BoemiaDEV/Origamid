@@ -1,8 +1,5 @@
-
 export default function initNumeros() {
-
   function animaNumeros() {
-
     const numeros = document.querySelectorAll('[data-numero]');
     numeros.forEach((numero) => {
       const total = +numero.innerText;
@@ -13,22 +10,19 @@ export default function initNumeros() {
         numero.innerText = start;
         if (start > total) {
           numero.innerText = start;
-          clearInterval(timer)
+          clearInterval(timer);
         }
-      }, 25 * Math.random())
+      }, 25 * Math.random());
     });
   }
+  let observer;
   function HandleMutation(mutation) {
     if (mutation[0].target.classList.contains('ativo')) {
       observer.disconnect();
-      animaNumeros()
+      animaNumeros();
     }
   }
-
-  const observeTarget = document.querySelector('.numeros')
-
-  const observer = new MutationObserver(HandleMutation);
-
-  observer.observe(observeTarget, { attributes: true })
-
+  const observeTarget = document.querySelector('.numeros');
+  observer = new MutationObserver(HandleMutation);
+  observer.observe(observeTarget, { attributes: true });
 }
