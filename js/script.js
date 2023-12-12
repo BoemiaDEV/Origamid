@@ -24,7 +24,7 @@ accordion.init();
 const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
 tabNav.init();
 
-const modal = new Modal();
+const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]');
 modal.init();
 
 initAnimacaoScroll();
@@ -62,8 +62,3 @@ initFetchBitcoin();
 //     i = 0;
 //     iniciar.removeAttribute('disabled', '');
 // }
-
-
-// const botaoAbrir = document.querySelector('[data-modal="abrir"]');
-// const botaoFechar = document.querySelector('[data-modal="fechar"]');
-// const containerModal = document.querySelector('[data-modal="container"]');
