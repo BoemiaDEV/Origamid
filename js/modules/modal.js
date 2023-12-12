@@ -1,12 +1,15 @@
-export default function initmodal() {
-    const botaoAbrir = document.querySelector('[data-modal="abrir"]');
-    const botaoFechar = document.querySelector('[data-modal="fechar"]');
-    const containerModal = document.querySelector('[data-modal="container"]');
-    function abrirModalAndFechar(event) {
-        event.preventDefault();
-        containerModal.classList.toggle('ativo');
+export default class Modal {
+    constructor(abrir, fechar, container){
+    this.botaoAbrir = document.querySelector(abrir);
+    this.botaoFechar = document.querySelector(fechar);
+    this.containerModal = document.querySelector(container);
     }
-    function cliqueForadoModal(event) {
+    
+    abrirModalAndFechar(event) {
+        event.preventDefault();
+        this.containerModal.classList.toggle('ativo');
+    }
+    cliqueForadoModal(event) {
         if (event.target === this) {
             abrirModalAndFechar(event);
         }

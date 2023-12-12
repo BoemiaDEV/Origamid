@@ -6,7 +6,8 @@ import Accordion from './modules/accordion.js';
 
 import TabNav from './modules/tabnav.js';
 
-import initmodal from './modules/modal.js';
+import Modal from './modules/modal.js';
+
 import initTooltip from './modules/tooltip.js';
 import initDropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
@@ -23,8 +24,10 @@ accordion.init();
 const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
 tabNav.init();
 
+const modal = new Modal();
+modal.init();
+
 initAnimacaoScroll();
-initmodal();
 initTooltip();
 initDropdownMenu();
 initMenuMobile();
@@ -59,3 +62,8 @@ initFetchBitcoin();
 //     i = 0;
 //     iniciar.removeAttribute('disabled', '');
 // }
+
+
+// const botaoAbrir = document.querySelector('[data-modal="abrir"]');
+// const botaoFechar = document.querySelector('[data-modal="fechar"]');
+// const containerModal = document.querySelector('[data-modal="container"]');
