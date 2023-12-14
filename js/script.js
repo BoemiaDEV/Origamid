@@ -48,7 +48,8 @@ funcionamento.init();
 
 initFetchBitcoin();
 
-fetchAnimais('../../animaisApi.json', '.numeros-grid');
+fetchAnimais('../animaisApi.json', '.numeros-grid');
+
 // const iniciar = document.querySelector('.iniciar');
 // const pausar = document.querySelector('.pausar');
 // const tempo = document.querySelector('.tempo');
