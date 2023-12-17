@@ -17,7 +17,10 @@ import DropdownMenu from './modules/dropdown-menu.js';
 import MenuMobile from './modules/menu-mobile.js';
 
 import Funcionamento from './modules/funcionamento.js';
+
 import initFetchBitcoin from './modules/fetch-bitcoin.js';
+
+import SlideNav from './modules/slide.js';
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -77,3 +80,7 @@ fetchAnimais('../animaisApi.json', '.numeros-grid');
 //     i = 0;
 //     iniciar.removeAttribute('disabled', '');
 // }
+
+const slide = new SlideNav('.slide', '.slide-wrapper');
+slide.init();
+slide.addEventControl('.custom-controls');
